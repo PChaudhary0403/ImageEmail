@@ -7,140 +7,148 @@
 
 <style>
 
-body{
+*{
     margin:0;
-    padding:25px 10px;
-    background:#f3f5f7;
-    font-family: "Segoe UI", Arial, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f6f8;
+    font-family:"Segoe UI",Arial,sans-serif;
+    padding:12px;
 }
 
 .container{
-    max-width:700px;
+    max-width:620px;
     margin:auto;
-    background:#ffffff;
-    border-radius:18px;
+    background:#fff;
+    border-radius:12px;
     overflow:hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
 }
 
 .header img{
-    display:block;
     width:100%;
-    height:auto;
+    display:block;
 }
 
 .content{
-    padding:70px 40px;
+    padding:32px 28px;
     text-align:center;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .content h1{
-    margin:0;
     color:#0B7D3E;
-    font-size:36px;
-    font-weight:bold;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-size:28px;
+    margin-bottom:18px;
+    font-weight:700;
 }
 
 .content p{
-    margin:55px auto;
-    max-width:520px;
-    font-size:22px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    text-align:justify;
-    line-height:1.7;
     color:#555;
+    font-size:17px;
+    line-height:1.6;
+    text-align:justify;
+    margin-bottom:28px;
 }
 
 .button{
     display:inline-block;
-    margin-top:15px;
     background:#0B7D3E;
-    color:#ffffff !important;
+    color:#fff !important;
     text-decoration:none;
-    padding:18px 55px;
-    border-radius:10px;
-    font-size:24px;
+    padding:14px 36px;
+    border-radius:8px;
+    font-size:17px;
     font-weight:600;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .footer{
     border-top:1px solid #ececec;
-    padding:45px 25px;
     text-align:center;
+    padding:24px 20px;
 }
 
 .footer h2{
     color:#0B7D3E;
-    margin:0;
-    font-size:28px;
+    font-size:22px;
+    margin-bottom:12px;
 }
 
-.tagline{
-    margin-top:18px;
-    font-size:22px;
-    color:#444;
-    line-height:1.6;
+.email{
+    color:#666;
+    font-size:15px;
+    margin-bottom:16px;
 }
 
 .links{
-    margin-top:35px;
+    margin-bottom:18px;
 }
 
 .links a{
     color:#0B7D3E;
     text-decoration:none;
-    margin:0 12px;
-    font-size:18px;
+    font-size:15px;
     font-weight:600;
-}
-
-.email{
-    margin-top:18px;
-    color:#555;
-    font-size:17px;
+    margin:0 8px;
 }
 
 .copy{
-    margin-top:30px;
-    color:#777;
-    font-size:15px;
+    color:#888;
+    font-size:13px;
 }
 
 @media only screen and (max-width:600px){
 
+body{
+    padding:0;
+}
+
+.container{
+    border-radius:0;
+}
+
 .content{
-    padding:45px 25px;
+    padding:24px 18px;
 }
 
 .content h1{
-    font-size:32px;
+    font-size:24px;
 }
 
 .content p{
-    font-size:18px;
+    font-size:15px;
+    line-height:1.55;
 }
 
 .button{
     display:block;
-    max-width:260px;
-    margin:20px auto 0;
+    width:170px;
+    margin:0 auto;
     text-align:center;
+}
+
+.footer{
+    padding:20px 15px;
+}
+
+.footer h2{
+    font-size:20px;
+}
+
+.email{
+    font-size:14px;
 }
 
 .links a{
     display:block;
-    margin:12px 0;
+    margin:8px 0;
+    font-size:14px;
 }
 
-.footer h2{
-    font-size:30px;
-}
-
-.tagline{
-    font-size:18px;
+.copy{
+    font-size:12px;
 }
 
 }
@@ -154,28 +162,21 @@ body{
 <div class="container">
 
 <div class="header">
-
 <img
-src="https://indtoday.com/wp-content/uploads/2026/08/Spider-Man-Brand-New-Day-1068x601.jpg"
-alt="Neuramaps Banner"
-width="700"
-style="display:block;width:100%;max-width:700px;height:auto;border:0;">
-
+src="./assets/NeuramapsLOGO.jpeg"
+alt="Neuramaps Banner">
 </div>
 
 <div class="content">
 
-<!-- <h1>Hello Sumeet,</h1> -->
-<h1> Hello Harsh,</h1>
-<p>
+<h1>Hello Harsh,</h1>
 
-<!-- {{CONTENT}} -->
-This mail is to inform you that you have been appointed as the CBO and associate software developer in our working space.
+<p>
+This mail is to inform you that you have been appointed as the <strong>CBO</strong> and <strong>Associate Software Developer</strong> in our working space. We are excited to have you join the Neuramaps team and look forward to building innovative solutions together.
 </p>
 
-<a class="button"
-href="{{BUTTON_LINK}}">
-Click 
+<a class="button" href="{{BUTTON_LINK}}">
+Get Started
 </a>
 
 </div>
@@ -185,27 +186,18 @@ Click
 <h2>Neuramaps</h2>
 
 <div class="email">
-
 📧 neuramaps@gmail.com
-
 </div>
 
 <div class="links">
-
-<a href="https://www.neuramaps.in">🌐 neuramaps.in</a>
-
-<a href="https://www.linkedin.com/company/neuramap/?">LinkedIn</a>
-
+<a href="https://www.neuramaps.in">🌐 Website</a>
+<a href="https://www.linkedin.com/company/neuramap/">LinkedIn</a>
 <a href="https://www.instagram.com/neuramaps/">Instagram</a>
-
 <a href="https://x.com/neuramaps">X</a>
-
 </div>
 
 <div class="copy">
-
-© 2026 Neuramaps
-
+© 2026 Neuramaps. All rights reserved.
 </div>
 
 </div>
